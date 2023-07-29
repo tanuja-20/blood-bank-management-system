@@ -1,0 +1,18 @@
+For install python-pip in your system:
+python --version
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+
+Install the requirements:
+pip install Django==3.0.5
+pip install django-widget-tweaks==1.4.8
+pip install asgiref==3.2.7
+pip install pytz==2020.1
+pip install sqlparse==0.3.1
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+For Admin Account, please create one with superuser:
+python manage.py createsuperuser
